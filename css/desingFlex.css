@@ -1,0 +1,145 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #18143a;
+  width: 100vw;
+  height: 100vh;
+}
+
+.headerContainer {
+  width: 100vw;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logoImg {
+  width: 173px;
+  height: 40px;
+  margin-left: 2cm;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 22px;
+  color: #ffffff;
+  gap: 70px;
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin-right: 2cm;
+
+  text-align: center;
+}
+
+.contentMenu:hover {
+  transition: 0.3 ease;
+  cursor: pointer;
+  color: aqua;
+  border-bottom: 2px solid aqua;
+  border-radius: 4px;
+  padding-bottom: 5px;
+}
+
+/*FINZALIZACION DE DISENO DEL HEADER*/
+
+
+/*COMIENZO DEL DISEÑO MAIN*/
+
+main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+}
+main .articleText{
+   display: flex;
+   flex-direction: column;
+   
+}
+.infoSobreMi:first-child {
+    display: flex;
+    align-items: center;
+    
+  }
+  .imgCaja{
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+  }
+  #imgPerfil{
+    height: 300px;
+    width: 300px;
+   
+  }
+  .articleText{
+    margin-right: 200px;
+  }
+  #nombre {
+    color:#FFFFFF;
+    opacity: 0.9;
+    margin-bottom: 0;
+  }
+  #prof {
+    color: #9b5de5;
+ 
+    margin-bottom: 0;
+  }
+  #line {
+    margin: 0;
+    margin-bottom: 10px;
+    color:aquamarine;
+    opacity: 0.9;
+  }
+  #textMy {
+    color: #FFFFFF;
+    opacity: 0.9;
+  }
+  .btnCv {
+  padding: 10px 20px;
+  border-radius: 60px;
+  cursor: pointer;
+  background-color: chartreuse;
+  border-style: none;
+  color: black;
+  }
+  #colorText{
+    color: #9b5de5;
+  }
+
+  .cajaCv{
+    margin-top: 40px;
+  }
+  .cajaCv{
+    display: flex;
+    align-items: center;
+  }
+  #git{
+    margin-left: 1cm;
+  }
+  #linkenin{
+    margin-left: 1cm;
+  }
+  #imgGit{
+    background-size: cover;
+    width: 39px;
+    height: 40px;
+  }
+  #imgLinkenin{
+    background-size: cover;
+    width: 39px;
+    height: 40px;  
+  }
+  .footer-ultimate{
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .textfooter{
+    text-align: end;
+  }
