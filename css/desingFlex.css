@@ -63,12 +63,13 @@ main .articleText{
    flex-direction: column;
    
 }
-.infoSobreMi:first-child {
+
+#infoSobreMi:first-child {
     display: flex;
     align-items: center;
     
   }
-  .imgCaja{
+  #imgCaja{
     display: flex;
     justify-content: center;
     margin-left: 25%;
