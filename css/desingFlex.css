@@ -109,6 +109,7 @@ main .articleText{
   background-color: chartreuse;
   border-style: none;
   color: black;
+  text-decoration: none;
   }
   #colorText{
     color: #9b5de5;
