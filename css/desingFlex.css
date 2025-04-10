@@ -166,5 +166,29 @@ main .articleText{
     color: #FFFFFF ;
   }
   .textProyects p {
-    color: aqua;
+    color: #9b5de5;
   }
+
+  /*SEGUNDA SECCION DEL MAIN BOTONES Y PROYECTOS*/
+
+  .botones-tab{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 1cm;
+  }
+  .botones-tab{
+   gap: 36px 
+  }
+ .btnContenido{
+  padding: 12px 70px;
+  border-radius: 60px;
+  background-color: chartreuse;
+  opacity: 0.9;
+  border-style: none;
+ }
+ .responsiveWeb{
+  padding-left: 33px;
+  padding-right: 33px;
+ }
+  
