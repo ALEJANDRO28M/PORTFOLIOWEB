@@ -11,11 +11,15 @@ body {
 
 .headerContainer {
   width: 100vw;
-  margin-top: 40px;
-  margin-bottom: 50px;
+ 
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  position: fixed;
+  top: 0;
+  padding: 25px;
+  background-color:#18143a;
+  z-index: 9999; /* <-- Esto asegura que esté encima del contenido */
 }
 
 .logoImg {
@@ -53,15 +57,19 @@ body {
 /*COMIENZO DEL DISEÑO MAIN*/
 
 main{
-    display: flex;
+  
     height: 100vh;
     width: 100vw;
-    margin: auto;
+    margin-top: 4cm;
 }
 main .articleText{
    display: flex;
    flex-direction: column;
    
+}
+.descriptionCv{
+  display: flex;
+  
 }
 
 #infoSobreMi:first-child {
@@ -139,9 +147,24 @@ main .articleText{
     height: 40px;  
   }
   .footer-ultimate{
-    padding: 6px;
+    padding: 1px;
     background-color: rgba(0, 0, 0, 0.4);
   }
   .textfooter{
     text-align: end;
+  }
+  .textProyects{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .textProyects{
+    margin-top: 2cm;
+    align-items: center;
+  }
+  .textProyects h3{
+    color: #FFFFFF ;
+  }
+  .textProyects p {
+    color: aqua;
   }

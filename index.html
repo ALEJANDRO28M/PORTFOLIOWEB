@@ -27,7 +27,7 @@
       </nav>
     </header>
     <main>
-   
+      <div class="descriptionCv">
       <article  class="animate__animated animate__fadeInLeft"  id="imgCaja" >
         <img src="../img/imgPerfilPort.png" alt="" id="imgPerfil" />
       </article>
@@ -51,7 +51,25 @@
             <div id="linkenin"><a href="https://www.linkedin.com/in/luis-alejandro-forero/" class="direcLinkenin" ><img src="../img/linkedin_3983888.png" alt="" id="imgLinkenin"></a></div>
         </div>
       </div>
-     
+    </div>
+    <article class="textProyects">
+     <h3>PROYECTOS</h3>
+     <p>La programacion es un viaje de aprendizaje constante</p>
+    </article>
+    <div class="seccion-portafolio">
+      <div class="botones-tab">
+        <button onclick="mostrarContenido('contenido1')">Proyecto 1</button>
+        <button onclick="mostrarContenido('contenido2')">Proyecto 2</button>
+        <button onclick="mostrarContenido('contenido3')">Proyecto 3</button>
+      </div>
+    
+      <div class="contenidos-tab">
+        <div id="contenido1" class="contenido-tab">Este es el Proyecto 1</div>
+        <div id="contenido2" class="contenido-tab oculto">Este es el Proyecto 2</div>
+        <div id="contenido3" class="contenido-tab oculto">Este es el Proyecto 3</div>
+      </div>
+    </div>
+    
     </main>
     <footer class="footer-ultimate">
       <h3 class="textfooter">© 2025 Alejandro Forero - Todos los derechos reservados</h3>
@@ -60,5 +78,6 @@
     <script>
       AOS.init();
     </script>   
+    <script src="javascript/proyectsFuctions.js"></script>
   </body>
 </html>

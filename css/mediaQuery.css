@@ -64,3 +64,15 @@
        justify-content: center;
      }
 }
+
+.contenido-tab {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+  }
+  
+  .oculto {
+    display: none;
+  }
+  
