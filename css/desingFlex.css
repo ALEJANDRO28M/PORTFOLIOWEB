@@ -39,13 +39,17 @@ html, body {
   gap: 30px;
   align-items: center;
   font-size: 22px;
-  color: #ffffff;
+  
   gap: 70px;
   flex-grow: 1;
   justify-content: flex-end;
   margin-right: 2cm;
 
   text-align: center;
+}
+.contentMenu{
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .contentMenu:hover {
@@ -215,6 +219,8 @@ main .articleText{
 }
 .textfooter{
   text-align: end;
+  color: white;
+  font-size: 15px;
 }
 .cajaSacm h2{
 
@@ -240,4 +246,7 @@ main .articleText{
 }
 .SacmDirect:hover{
   color: blueviolet;
+}
+.btnContenido:hover{
+cursor: pointer;
 }
