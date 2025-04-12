@@ -166,6 +166,8 @@ main .articleText{
     color: #FFFFFF ;
   }
   .textProyects p {
+    animation: pulse 2s infinite;
+    transition: transform 0.2s ease-in-out;
     color: #9b5de5;
   }
 
@@ -204,8 +206,8 @@ main .articleText{
  }
  .imgSacm{
   width:100%;
-  height: 300px;
-  
+  height: 170px;
+  border-radius: 8px;
  }
  .footer-ultimate{
   padding: 1px;
@@ -213,4 +215,29 @@ main .articleText{
 }
 .textfooter{
   text-align: end;
+}
+.cajaSacm h2{
+
+  color: brown ;
+  text-shadow: 2px 2px 2px black;
+}
+.cajaSacm p{
+  margin-top: 1cm;
+  color: black;
+}
+.cajaSacm span{
+  color:blue ;
+}
+#FlexImg{
+  display: flex;
+  flex-direction: column;
+}
+.cajaSacm #textIdSacm{
+  margin-top: 2cm;
+}
+.SacmDirect{
+ color: blue;
+}
+.SacmDirect:hover{
+  color: blueviolet;
 }
