@@ -31,37 +31,46 @@
 /*MEDIA QUERY MAIN*/
 
 @media (max-width: 1300px){
-    .imgCaja{
+    #imgCaja{
         margin-left: 20%;
       }
 }
 
 @media (max-width: 1000px){
-    .imgCaja{
+    #imgCaja{
         margin-left: 15%;
       }
 }
 @media (max-width: 900px){
-    .imgCaja{
+    #imgCaja{
         margin-left: 10%;
       }
 }
 @media (max-width: 800px){
-    .imgCaja{
+    #imgCaja{
         margin-left: 5%;
       }
 }
 @media (max-width: 770px){
-    .imgCaja{
+    #imgCaja{
         margin-left: 0%;
       }
 }
 @media (max-width: 730px){
-    main{
+    .descriptionCv{
         flex-direction: column;
     }
     .articleText{
        justify-content: center;
+     }
+     .contenidos-tab{
+        flex-direction: column;
+     }
+     .contenido-tab{
+        flex-direction: column;
+     }
+     .botones-tab{
+        flex-direction: column;
      }
 }
 
