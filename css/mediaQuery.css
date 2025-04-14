@@ -73,7 +73,26 @@
         flex-direction: column;
      }
 }
+@media (max-width: 730px){
 
+    .articleText{
+       text-align: center;
+       margin-left: 20px;
+       margin-right: 20px;
+     }
+     .cajaCv{
+        justify-content: center;
+     }
+     .contenidos-tab{
+        flex-direction: column;
+     }
+     .contenido-tab{
+        flex-direction: column;
+     }
+     .botones-tab{
+        flex-direction: column;
+     }
+}
 .contenido-tab {
     margin-top: 20px;
     padding: 20px;
