@@ -188,19 +188,19 @@ main .articleText{
   }
  .btnContenido{
   padding: 12px 70px;
-  border-radius: 60px;
+  border-radius: 15px;
   background-color: chartreuse;
   opacity: 0.9;
   border-style: none;
+  color: black;
  }
- .responsiveWeb{
-  padding-left: 33px;
-  padding-right: 33px;
+ .active{
+  color: blue;
+  padding: 12px 100px; 
  }
+
  .contenido-tab{
   display: flex;
-  
-  
  }
  .cajaSacm{
   width: 50%;

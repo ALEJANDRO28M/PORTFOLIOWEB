@@ -58,9 +58,9 @@
     </article>
     <div class="seccion-portafolio">
       <div class="botones-tab">
-        <button onclick="mostrarContenido('contenido1')" class="btnContenido Sacm">Sacm</button>
-        <button onclick="mostrarContenido('contenido2')" class="btnContenido responsiveWeb">Diseño Web Responsivo</button>
-        <button onclick="mostrarContenido('contenido3')" class="btnContenido Soundal">Soundal</button>
+        <button onclick="mostrarContenido('contenido1') ; btnSeleccionado(this)" class="btnContenido Sacm">Sacm</button>
+        <button onclick="mostrarContenido('contenido2') ; btnSeleccionado(this)" class="btnContenido responsiveWeb">Diseño Web Responsivo</button>
+        <button onclick="mostrarContenido('contenido3') ; btnSeleccionado(this)" class="btnContenido Soundal">Soundal</button>
       </div>
     
       <div class="contenidos-tab">
@@ -84,13 +84,12 @@
         </div>
         <div id="contenido2" class="contenido-tab oculto">
           <article class="cajaSacm">
-            <h2>SACM</h2>
-            <p>SACM (<span>Sistema de Administración para Centros Médicos</span>) es 
-              un proyecto desarrollado con <span>Java</span>, <span>Spring Boot</span> y <span>MySQL</span>, enfocado 
-              en  la gestión de pacientes, usuarios y datos clínicos
-              en una IPS. Incluye funcionalidades de <span>CRUD</span>, control de accesos
-              y conexión a base de datos, ofreciendo una solución eficiente
-              y segura para entornos de salud.
+            <h2>Diseño web Responsivo</h2>
+            <p>Este proyecto presenta un diseño web responsivo desarrollado
+               con <span>HTML</span> y <span>CSS</span> usando <span>Flexbox</span>, permitiendo que la estructura
+               y los elementos de la página se ajusten de forma óptima a distintos
+               tamaños de pantalla, mejorando la accesibilidad y experiencia del 
+               usuario en dispositivos móviles, tablets y computadoras.
             </p>
             <h3 id="textIdSacm">¡PARA ACCEDER AL REPOSITORIO, HAZ CLICK EN EL SIGUIENTE ENLACE!</h3>
             <a href="https://github.com/ALEJANDRO28M/SACM" class="SacmDirect">https://github.com/ALEJANDRO28M/SACM</a>

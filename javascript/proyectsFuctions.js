@@ -22,3 +22,13 @@ function mostrarContenido(idContenido) {
     const contenidoSeleccionado = document.getElementById(idContenido);
     contenidoSeleccionado.classList.remove('oculto');
   */
+
+
+
+  /*FUNCION PARA MOSTRAR COLOR DE LOS BOTONES*/
+
+  function btnSeleccionado(btnClickeado){
+    const capturarClase = document.querySelectorAll('.btnContenido');
+    capturarClase.forEach(button => button.classList.remove('active'));
+    btnClickeado.classList.add('active');
+  }
