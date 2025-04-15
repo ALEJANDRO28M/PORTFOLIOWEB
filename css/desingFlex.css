@@ -167,12 +167,13 @@ main .articleText{
     align-items: center;
   }
   .textProyects h3{
-    color: #FFFFFF ;
+    color: blueviolet ;
+    font-size: 25px;
   }
   .textProyects p {
     animation: pulse 2s infinite;
     transition: transform 0.2s ease-in-out;
-    color: #9b5de5;
+    color: #FFFFFF;
   }
 
   /*SEGUNDA SECCION DEL MAIN BOTONES Y PROYECTOS*/
@@ -253,3 +254,15 @@ cursor: pointer;
 
 /*SECCION OF HABILITIES*/
 
+.habilidadesContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 1cm;
+}
+
+.habilidadesContainer #textTitle{
+  text-align: center;
+  color:blueviolet ;
+   font-size: 25px;
+}
