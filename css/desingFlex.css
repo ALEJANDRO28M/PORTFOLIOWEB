@@ -259,10 +259,24 @@ cursor: pointer;
   flex-direction: column;
   width: 100vw;
   margin-top: 1cm;
+  align-items: center;
 }
 
 .habilidadesContainer #textTitle{
   text-align: center;
   color:blueviolet ;
    font-size: 25px;
+}
+
+.contentHabilities {
+display: flex;
+flex-wrap: wrap;
+padding: 10px;
+justify-content: space-evenly;
+width: 55vw;
+margin-top: 20px;
+border: 3px;
+border-style: solid;
+border-color: white;
+gap: 40px;
 }
