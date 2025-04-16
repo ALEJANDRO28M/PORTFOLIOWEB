@@ -258,14 +258,14 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   width: 100vw;
-  margin-top: 1cm;
+  margin-top: 20px;
   align-items: center;
 }
 
 .habilidadesContainer #textTitle{
   text-align: center;
   color:blueviolet ;
-   font-size: 25px;
+   font-size: 20px;
 }
 
 .contentHabilities {
@@ -279,4 +279,41 @@ border: 3px;
 border-style: solid;
 border-color: white;
 gap: 40px;
+}
+
+/*SECCION DE SOBRE MI*/
+.sobreMiContainer{
+  display: flex;
+  width: 80vw;
+  margin: auto;
+}
+.artSobreMi{
+  padding-top: 1cm;
+  text-align: center;
+}
+.artSobreMi h3{
+  color: blueviolet;
+  font-size: 25px;
+ 
+  
+}
+.artSobreMi #colorLine{
+  color: aqua;
+}
+
+.artSobreMi span{
+  color: blueviolet;
+}
+.artSobreMi p{
+  color: #FFFFFF;
+}
+.TsobreMiContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.TsobreMiContainer #imgMi{
+  height: 50px;
 }
