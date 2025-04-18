@@ -22,8 +22,8 @@
         <a href="#" class="contentMenu">Inicio</a>
         <a href="#textTitle" class="contentMenu">Proyectos</a>
         <a href="#habiId" class="contentMenu">Habilidades</a>
-        <a href="#PROYECTOS" class="contentMenu">Sobre mi</a>
-        <a href="#PROYECTOS" class="contentMenu">Contacto</a>
+        <a href="#imgMi" class="contentMenu">Sobre mi</a>
+        <a href="#directContacto" class="contentMenu">Contacto</a>
       </nav>
     </header>
     <main>
@@ -60,7 +60,7 @@
       <div class="botones-tab">
         <button onclick="mostrarContenido('contenido1') ; btnSeleccionado(this)" class="btnContenido Sacm">Sacm</button>
         <button onclick="mostrarContenido('contenido2') ; btnSeleccionado(this)" class="btnContenido responsiveWeb">Diseño Web Responsivo</button>
-        <button onclick="mostrarContenido('contenido3') ; btnSeleccionado(this)" class="btnContenido Soundal">Soundal</button>
+        <button onclick="mostrarContenido('contenido3') ; btnSeleccionado(this)" class="btnContenido Soundal">Sundal</button>
       </div>
     
       <div class="contenidos-tab">
@@ -102,8 +102,8 @@
         </div>
         <div id="contenido3" class="contenido-tab oculto">
           <article class="cajaSacm">
-            <h2>SOUNDAL</h2>
-            <p><span>SOUNDAL</span> es una interfaz de escritorio desarrollada con 
+            <h2>SUNDAL</h2>
+            <p><span>SUNDAL</span> es una interfaz de escritorio desarrollada con 
               <span>Java</span> en <span>NetBeans</span>, conectada a una base de datos 
               <span>MySQL</span>. Está enfocada en la gestión de contenido multimedia y funcionalidades específicas para el usuario. 
               Incluye operaciones de <span>CRUD</span>, una interfaz amigable y un diseño centrado en la eficiencia y facilidad de uso en entornos locales.
@@ -112,14 +112,14 @@
             <a href="https://github.com/ALEJANDRO28M/SACM" class="SacmDirect">https://github.com/ALEJANDRO28M/SACM</a>
           </article>
           <div class="cajaSacm" id="flexImg">
-            <img src="img/Sacm.png" alt="" class="imgSacm">
-            <img src="img/image.png" alt="" class="imgSacm">
+            <img src="img/sundal.png" alt="" class="imgSacm">
+            <img src="img/invetSoundal.png" alt="" class="imgSacm">
           </div>
         </div>
       </div>
     </div>
-    <div class="habilidadesContainer">
-      <div id="textTitle"><h3 id="habiId">HABILIDADES</h3></div>
+    <div class="habilidadesContainer" id="habiId">
+      <div id="textTitle"><h3 >HABILIDADES</h3></div>
       <div class="contentHabilities">
         <div class="imghabilidades"><img src="img/imgHabilidades/JavaM.png" alt=""></div>
         <div class="imghabilidades"><img src="img/imgHabilidades/javascript (2).png" alt=""></div>
@@ -135,6 +135,7 @@
         <div class="imghabilidades"><img src="img/imgHabilidades/MySQL.png" alt=""></div>
       </div>
     </div>
+    
     <div class="sobreMiContainer">
       <article class="artSobreMi">
         <div class="TsobreMiContainer"><img src="img/imgHabilidades/rueda.gif" alt="" id="imgMi"><h3>UN POCO MAS SOBRE MI</h3><img src="img/imgHabilidades/iconBackend.gif" alt=""  id="imgMi"></div>
@@ -143,7 +144,20 @@
           Además de los conocimientos adquiridos en mi programa académico, he complementado mi aprendizaje a través de cursos en plataformas como <span>Udemy</span>, donde me he formado en temas como <span>desarrollo web</span>, <span>bases de datos</span>, <span>Java</span>, <span>Spring Boot</span> y <span>React</span>, fortaleciendo así mis <span>habilidades prácticas</span> y ampliando mi visión del mundo del desarrollo.
           Me considero una persona <span>responsable</span>, <span>proactiva</span> y con una fuerte <span>ética de trabajo</span>. Disfruto enfrentar nuevos <span>retos</span>, trabajar en <span>equipo</span> y compartir lo que aprendo con los demás.
           Mi meta es seguir <span>creciendo</span> en este campo, asumir nuevos <span>desafíos</span> y convertirme en un <span>profesional</span> capaz de aportar <span>valor real</span> a cada <span>proyecto</span> en el que participe. Este <span>portafolio</span> es una muestra de mi <span>proceso</span>, de lo que he <span>aprendido</span> y de todo lo que aún estoy por <span>construir</span>.</p>
+          <h4 id="colorLine">_____________________</h4>
       </article>
+    </div>
+    <div class="formulario-container">
+      <h2>Trabajemos juntos!!</h2>
+      <form action="https://formspree.io/f/meoawgja" method="post" id="directContacto">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="correo@correo.com" required />
+  
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="message" placeholder="Quiero trabajar contigo..." required></textarea>
+  
+        <button type="submit">Enviar</button>
+      </form>
     </div>
     </main>
     <footer class="footer-ultimate">
