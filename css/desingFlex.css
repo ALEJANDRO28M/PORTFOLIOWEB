@@ -17,12 +17,10 @@ html, body {
 
 .headerContainer {
   width: 100vw;
- 
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   position: fixed;
-  
   padding: 25px;
   background-color:#18143a;
   z-index: 9999; /* <-- Esto asegura que esté encima del contenido */
@@ -379,4 +377,11 @@ button {
 
 button:hover {
   transform: scale(1.05);
+}
+
+.cajaWhatssap{
+  cursor: default;
+}
+.cursorWhatssap:hover{
+cursor: pointer;
 }
