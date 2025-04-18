@@ -22,7 +22,7 @@ html, body {
   flex-direction: row;
   justify-content: space-around;
   position: fixed;
-  top: 0;
+  
   padding: 25px;
   background-color:#18143a;
   z-index: 9999; /* <-- Esto asegura que esté encima del contenido */

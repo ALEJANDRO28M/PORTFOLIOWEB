@@ -17,13 +17,17 @@
     }
 }
 @media (max-width: 650px){
-
+.headerContainer{
+   padding: 0px;
+}
     .menu{
         gap: 10px;
         flex-direction: row;
-        margin-left: 0px;
-        font-size: 3vw;
+        margin: auto;
+        padding-top: 15px;
+        font-size: 4vw;
         justify-content: center;
+        align-items: center;
     }
     .logoImg{
         display: none;
