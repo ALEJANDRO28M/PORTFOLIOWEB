@@ -68,7 +68,7 @@ main{
   
   flex: 1;
   width: 100vw;
-  margin-top: 4cm;
+  margin-top: 2cm;
 }
 main .articleText{
    display: flex;
