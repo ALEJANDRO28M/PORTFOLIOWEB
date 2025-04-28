@@ -159,4 +159,8 @@
   .oculto {
     display: none;
   }
-  
+  @media (max-width: 376px){
+    .main{
+        margin-right: 2cm;
+    }
+  }

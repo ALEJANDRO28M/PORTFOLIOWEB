@@ -41,7 +41,7 @@ html, body {
   gap: 70px;
   flex-grow: 1;
   justify-content: flex-end;
-  margin-right: 2cm;
+  margin-right: 4cm;
 
   text-align: center;
 }
