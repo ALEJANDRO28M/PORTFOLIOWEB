@@ -223,8 +223,12 @@ main .articleText{
   font-size: 15px;
 }
 .cajaSacm h2{
-
-  color: brown ;
+  border-style: solid;
+  border-color:darkgray;
+  background-color: darkgray;
+  border-radius: 5px 30px 30px 5px;
+  width: 60%;
+  color: white ;
   text-shadow: 2px 2px 2px black;
 }
 .cajaSacm p{
