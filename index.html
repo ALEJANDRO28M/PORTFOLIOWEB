@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,8 @@
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <title>Portafolio_Alejandro</title>
+    <title>Luis Alejandro Forero | Desarrollador de Software Java</title>
+    <meta name="description" content="Portafolio de Luis Alejandro Forero Zapata, Tecnólogo en Análisis y Desarrollo de Software. Java, Spring Boot, React y MySQL.">
   </head>
   <body>
  
@@ -38,11 +39,12 @@
           <h3 id="prof">FULL STACK DEVELOPER</h3>
           <h3 id="line">________________________________________</h3>
           <p id="textMy">
-            <span id="colorText">Desarrollador de software</span>, apasionado por la 
-            <span id="colorText">programación</span> y la resolución de problemas.
-             Me motiva enfrentar desafíos y encontrar soluciones eficientes. 
-             Mi mayor fortaleza es la versatilidad, lo que me ha permitido adaptarme a
-              distintos entornos de desarrollo y mejorar constantemente mis habilidades.
+            <span id="colorText">Tecnólogo en Análisis y Desarrollo de Software</span> del SENA,
+             con experiencia profesional como <span id="colorText">Desarrollador Backend Java</span>.
+             Construyo APIs REST con Spring Boot, JPA/Hibernate y MySQL, y complemento el backend
+             con React y TypeScript. Actualmente me preparo para la certificación
+             <span id="colorText">AWS Cloud Practitioner</span> y desarrollo una plataforma
+             de e-commerce propia.
           </p>
         </article>
         <div class="cajaCv">
@@ -53,20 +55,22 @@
       </div>
     </div>
     <article class="textProyects">
-     <h3 id="textTitle">PROYECTOS</h3>
-     <p>La programacion es un viaje de aprendizaje constante</p>
+     <h3 id="textTitle">EXPERIENCIA Y PROYECTOS</h3>
+     <p>Mi trabajo profesional y los proyectos con los que sigo aprendiendo</p>
     </article>
     <div class="seccion-portafolio">
       <div class="botones-tab">
-        <button onclick="mostrarContenido('contenido1') ; btnSeleccionado(this)" class="btnContenido Sacm">Sacm</button>
         <button onclick="mostrarContenido('contenido2') ; btnSeleccionado(this)" class="btnContenido responsiveWeb">PRIMARKET</button>
-        <button onclick="mostrarContenido('contenido3') ; btnSeleccionado(this)" class="btnContenido Soundal">Sundal</button>
+        <button onclick="mostrarContenido('contenido4') ; btnSeleccionado(this)" class="btnContenido Ecommerce">E-commerce</button>
+        <button onclick="mostrarContenido('contenido1') ; btnSeleccionado(this)" class="btnContenido Sacm">SACM</button>
+        <button onclick="mostrarContenido('contenido3') ; btnSeleccionado(this)" class="btnContenido Soundal">SOUNDAL</button>
       </div>
     
       <div class="contenidos-tab">
-        <div id="contenido1" class="contenido-tab">
+        <div id="contenido1" class="contenido-tab oculto">
           <article class="cajaSacm">
             <h2>SACM</h2>
+            <p style="font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;opacity:.72;margin:0 0 .6rem">Proyecto formativo &middot; Febrero 2024 &ndash; 2025</p>
             <p>SACM (<span>Sistema de Administración para Centros Médicos</span>) es 
               un proyecto desarrollado con <span>Java</span>, <span>Spring Boot</span> y <span>MySQL</span>, enfocado 
               en  la gestión de pacientes, usuarios y datos clínicos
@@ -82,18 +86,21 @@
           <img src="img/image.png" alt="" class="imgSacm">
         </div>
         </div>
-        <div id="contenido2" class="contenido-tab oculto">
+        <div id="contenido2" class="contenido-tab">
           <article class="cajaSacm">
             <h2>PRIMARKET</h2>
-            <p>  Experiencia como <span class="mark">Desarrollador Backend Java — Spring Boot</span> en la plataforma e-commerce Primarket. 
-            Implementé <span class="mark">arquitectura hexagonal (puertos y adaptadores)</span> y expuse 
-            <span class="mark">API REST</span> documentadas con <span class="mark">Swagger / OpenAPI</span>. 
-            Modelé la persistencia en <span class="mark">MySQL</span> y desarrollé casos de uso para 
-            <span class="mark">gestión de productos, ventas y usuarios</span>. 
-            Integré un <span class="mark">chatbot por secciones</span> y apliqué buenas prácticas de 
-            <span class="mark">pruebas y validaciones</span>. 
-            Trabajo en <span class="mark">colaboración con Git y GitHub</span>, priorizando 
-            <span class="mark">escalabilidad</span> y <span class="mark">mantenibilidad</span>.
+            <p style="font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;opacity:.72;margin:0 0 .6rem">Experiencia profesional &middot; Junio &ndash; Diciembre 2025 &middot; 1.040 horas certificadas</p>
+            <p>Trabajé como <span class="mark">Desarrollador Backend Java &mdash; Spring Boot</span> en la plataforma
+            e-commerce Primarket, en un equipo remoto desde Buenos Aires.
+            Desarrollé <span class="mark">más de 15 endpoints REST</span> con Spring Boot, JPA/Hibernate y
+            <span class="mark">MySQL</span>, aplicando <span class="mark">principios SOLID</span> y patrones de diseño.
+            Implementé <span class="mark">autenticación y autorización con JWT</span>, protegiendo los servicios
+            críticos y la carga y transferencia de archivos entre el frontend en React y el backend.
+            Desarrollé el <span class="mark">flujo de verificación de cuenta por correo electrónico</span>
+            (generación del código, envío, validación y expiración) y construí un
+            <span class="mark">chatbot interno de soporte</span> que redujo cerca de un 30 % las consultas
+            manuales del equipo. Documenté la API con <span class="mark">Swagger / OpenAPI</span> y JavaDoc, y
+            trabajé con <span class="mark">Git y GitHub</span> bajo metodologías ágiles y revisiones de código.
             </p>
 
           </article>
@@ -104,19 +111,32 @@
         </div>
         <div id="contenido3" class="contenido-tab oculto">
           <article class="cajaSacm">
-            <h2>SUNDAL</h2>
-            <p><span>SUNDAL</span> es una interfaz de escritorio desarrollada con 
-              <span>Java</span> en <span>NetBeans</span>, conectada a una base de datos 
-              <span>MySQL</span>. Está enfocada en la gestión de contenido multimedia y funcionalidades específicas para el usuario. 
-              Incluye operaciones de <span>CRUD</span>, una interfaz amigable y un diseño centrado en la eficiencia y facilidad de uso en entornos locales.
+            <h2>SOUNDAL</h2>
+            <p style="font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;opacity:.72;margin:0 0 .6rem">Proyecto académico SENA &middot; Agosto 2023 &ndash; Febrero 2024</p>
+            <p><span>SOUNDAL</span> es un sistema de gestión para una veterinaria, desarrollado en
+              <span>Java</span> sobre <span>NetBeans</span> y conectado a una base de datos
+              <span>MySQL</span>. Diseñé el modelo relacional para la gestión integral de mascotas
+              y propietarios, e implementé operaciones <span>CRUD</span> para consulta, edición y
+              almacenamiento de la información, asegurando su integridad y disponibilidad.
             </p>
-            <h3 id="textIdSacm">¡PARA ACCEDER AL REPOSITORIO, HAZ CLICK EN EL SIGUIENTE ENLACE!</h3>
-            <a href="https://github.com/ALEJANDRO28M/SACM" class="SacmDirect">https://github.com/ALEJANDRO28M/SACM</a>
           </article>
           <div class="cajaSacm" id="flexImg">
             <img src="img/sundal.png" alt="" class="imgSacm">
             <img src="img/invetSoundal.png" alt="" class="imgSacm">
           </div>
+        </div>
+        <div id="contenido4" class="contenido-tab oculto">
+          <article class="cajaSacm">
+            <h2>E-COMMERCE PROPIO</h2>
+            <p style="font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;opacity:.72;margin:0 0 .6rem">Proyecto personal &middot; 2026 &ndash; Actualidad</p>
+            <p>Plataforma de <span>e-commerce</span> que desarrollo para mi emprendimiento tecnológico,
+              asumiendo el ciclo completo del producto. El backend está construido con
+              <span>Spring Boot</span> sobre <span>MySQL</span>: modelo de datos, catálogo de productos,
+              carrito y flujo de compra. El frontend está desarrollado en <span>React</span> con
+              <span>diseño responsivo</span>. Yo defino la arquitectura, el modelo de datos y las
+              decisiones técnicas del proyecto de principio a fin.
+            </p>
+          </article>
         </div>
       </div>
     </div>
@@ -142,10 +162,10 @@
       <article class="artSobreMi">
         <div class="TsobreMiContainer"><img src="img/imgHabilidades/rueda.gif" alt="" id="imgMi"><h3>UN POCO MAS SOBRE MI</h3><img src="img/imgHabilidades/iconBackend.gif" alt=""  id="imgMi"></div>
         <h4 id="colorLine">_____________________</h4>
-        <p>Soy <span>Luis Alejandro Forero Zapata</span>, aprendiz de <span>Análisis y Desarrollo de Software</span> en el <span>SENA</span>, apasionado por la <span>tecnología</span>, el <span>aprendizaje continuo</span> y la creación de <span>soluciones</span> que marquen la diferencia. A lo largo de mi formación me he destacado por ser una persona <span>curiosa</span>, <span>autodidacta</span> y comprometida con mi <span>crecimiento profesional</span>.
+        <p>Soy <span>Luis Alejandro Forero Zapata</span>, <span>Tecnólogo en Análisis y Desarrollo de Software</span> titulado del <span>SENA</span>. Mi experiencia profesional la construí como <span>Desarrollador Backend Java</span> en Primarket, donde trabajé <span>1.040 horas certificadas</span> desarrollando APIs REST con <span>Spring Boot</span>, <span>JPA/Hibernate</span> y <span>MySQL</span> para una plataforma de e-commerce.
           Además de los conocimientos adquiridos en mi programa académico, he complementado mi aprendizaje a través de cursos en plataformas como <span>Udemy</span>, donde me he formado en temas como <span>desarrollo web</span>, <span>bases de datos</span>, <span>Java</span>, <span>Spring Boot</span> y <span>React</span>, fortaleciendo así mis <span>habilidades prácticas</span> y ampliando mi visión del mundo del desarrollo.
           Me considero una persona <span>responsable</span>, <span>proactiva</span> y con una fuerte <span>ética de trabajo</span>. Disfruto enfrentar nuevos <span>retos</span>, trabajar en <span>equipo</span> y compartir lo que aprendo con los demás.
-          Mi meta es seguir <span>creciendo</span> en este campo, asumir nuevos <span>desafíos</span> y convertirme en un <span>profesional</span> capaz de aportar <span>valor real</span> a cada <span>proyecto</span> en el que participe. Este <span>portafolio</span> es una muestra de mi <span>proceso</span>, de lo que he <span>aprendido</span> y de todo lo que aún estoy por <span>construir</span>.</p>
+          Actualmente me preparo para la certificación <span>AWS Certified Cloud Practitioner</span> y desarrollo una <span>plataforma de e-commerce propia</span>, donde asumo el ciclo completo: arquitectura, modelo de datos, backend y frontend. Busco vincularme a un equipo de desarrollo donde pueda <span>aportar desde el primer día</span> y seguir creciendo como desarrollador backend.</p>
           <h4 id="colorLine">_____________________</h4>
       </article>
     </div>
@@ -167,7 +187,7 @@
     </div>
     </main>
     <footer class="footer-ultimate">
-      <h3 class="textfooter">© 2025 Alejandro Forero - Todos los derechos reservados.</h3>
+      <h3 class="textfooter">© 2026 Alejandro Forero - Todos los derechos reservados.</h3>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
@@ -176,3 +196,4 @@
     <script src="javascript/proyectsFuctions.js"></script>
   </body>
 </html>
+
