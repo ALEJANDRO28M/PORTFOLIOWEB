@@ -1,0 +1,90 @@
+name: Compilar APK Plan Resistencia
+
+on:
+  push:
+    branches: [ccr-6ecc9a75-u0wopn]
+    paths:
+      - 'plan-resistencia-app/**'
+      - '.github/workflows/plan-resistencia-apk.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: plan-resistencia-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: plan-resistencia-app
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    env:
+      VERSION: 1.0.${{ github.run_number }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: plan-resistencia-app/package-lock.json
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+          cache: gradle
+
+      # La llave de firma no está en el repositorio (es público): se crea una vez y se reutiliza
+      # desde la caché para que cada APK nuevo se instale encima del anterior.
+      - name: Recuperar llave de firma
+        uses: actions/cache@v4
+        with:
+          path: plan-resistencia-app/android/app/plan-resistencia.keystore
+          key: plan-resistencia-keystore-v1
+
+      - name: Crear llave de firma si no existe
+        run: |
+          if [ ! -f android/app/plan-resistencia.keystore ]; then
+            keytool -genkeypair -keystore android/app/plan-resistencia.keystore -alias planresistencia \
+              -keyalg RSA -keysize 2048 -validity 10000 -storepass planresistencia -keypass planresistencia \
+              -dname "CN=Plan Resistencia, O=ALEJANDRO28M, C=CO"
+          fi
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Revisar tipos
+        run: npm run typecheck
+
+      - name: Compilar la app web y sincronizar con Android
+        run: npm run sync
+
+      - name: Compilar APK
+        working-directory: plan-resistencia-app/android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon --stacktrace
+          cp app/build/outputs/apk/release/app-release.apk "../PlanResistencia-$VERSION.apk"
+
+      - name: Guardar APK como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: PlanResistencia-${{ env.VERSION }}
+          path: plan-resistencia-app/PlanResistencia-*.apk
+
+      - name: Publicar versión descargable
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: plan-resistencia-v${{ env.VERSION }}
+          target_commitish: ${{ github.sha }}
+          name: Plan Resistencia ${{ env.VERSION }} (Android)
+          body: |
+            App Android «Plan Resistencia». Descarga **PlanResistencia-${{ env.VERSION }}.apk** desde el teléfono y ábrelo para instalarla.
+            Si ya tienes la app, se instala encima y conserva tus datos.
+          files: plan-resistencia-app/PlanResistencia-*.apk
+          make_latest: true
